@@ -1,6 +1,6 @@
-require 'pry'
 
 def reverse_each_word (sentence)
-  binding.pry
-  word_array = sentence.split(" ").collect{|word| word}
+  sentence.split(" ").collect{|word| word.reverse}.join(" ")
 end 
+
+p reverse_each_word ("Hello there, and how are you?")
